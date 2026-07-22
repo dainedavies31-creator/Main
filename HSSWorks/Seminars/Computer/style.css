@@ -1,0 +1,306 @@
+/* ==========================================================================
+   1. CORE VARIABLES & GLOBAL RESET
+   ========================================================================== */
+:root {
+    --bg-gradient: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #311042 100%);
+    --card-bg: rgba(255, 255, 255, 0.03);
+    --card-border: rgba(255, 255, 255, 0.08);
+    --accent-primary: #a855f7;    /* Deep Purple Glow */
+    --accent-secondary: #22d3ee;  /* Cyan Highlight */
+    --text-main: #f8fafc;
+    --text-muted: #94a3b8;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* ==========================================================================
+   2. BODY & OVERALL LAYOUT
+   ========================================================================== */
+body {
+    background: var(--bg-gradient);
+    color: var(--text-main);
+    min-height: 100vh;
+    padding: 3rem 1.5rem;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+}
+
+/* ==========================================================================
+   3. TYPOGRAPHY & HEADER
+   ========================================================================== */
+header {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    background: linear-gradient(to right, var(--accent-secondary), var(--accent-primary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0.75rem;
+    letter-spacing: -1px;
+}
+
+header p {
+    color: var(--text-muted);
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+/* ==========================================================================
+   4. PRESENTATION GRID & CARDS
+   ========================================================================== */
+.device-card {
+    /*background: var(--card-bg);*/
+    border: 1px solid var(--card-border);
+    border-radius: 24px;
+    padding: 3rem;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), 
+                border-color 0.4s ease, 
+                box-shadow 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Glassmorphism hover animations */
+.device-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(168, 85, 247, 0.4);
+    box-shadow: 0 30px 60px rgba(168, 85, 247, 0.15);
+}
+
+/* Vertical neon accent indicator */
+.device-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    /*background: linear-gradient(to bottom, var(--accent-secondary), var(--accent-primary));*/
+}
+
+.device-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.device-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.device-era {
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--accent-secondary);
+    background: rgba(34, 211, 238, 0.1);
+    padding: 0.35rem 1rem;
+    border-radius: 20px;
+    border: 1px solid rgba(34, 211, 238, 0.2);
+}
+
+/* Two-column internal presentation block */
+.grid-split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+/* ==========================================================================
+   5. PRESENTATION CONTENT TEXT & BULLETS
+   ========================================================================== */
+.info-block h3 {
+    font-size: 1.15rem;
+    color: var(--accent-primary);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 1.25rem;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    position: relative;
+    padding-left: 1.75rem;
+    margin-bottom: 1rem;
+    color: #e2e8f0;
+    font-size: 1.05rem;
+}
+
+/* Left side textbook bullets */
+li::before {
+    content: "✦";
+    position: absolute;
+    left: 0;
+    color: var(--accent-secondary);
+    font-size: 0.95rem;
+}
+
+/* Right side advanced extra bullets */
+.extra-points li::before {
+    content: "⚡";
+    color: var(--accent-primary);
+    font-size: 0.95rem;
+}
+
+/* Footer presentation tip panel */
+.quick-fact {
+    margin-top: 2.5rem;
+    background: rgba(255, 255, 255, 0.015);
+    border-radius: 16px;
+    padding: 1.25rem;
+    border-left: 4px solid var(--accent-secondary);
+    font-style: italic;
+    color: var(--text-muted);
+    font-size: 1rem;
+}
+
+.quick-fact strong {
+    color: #ffffff;
+    font-style: normal;
+    margin-right: 0.5rem;
+}
+
+/* ==========================================================================
+   6. RESPONSIVE DESIGN (MOBILE ADAPTATION)
+   ========================================================================== */
+@media (max-width: 768px) {
+    body {
+        padding: 1.5rem 1rem;
+    }
+    
+    header {
+        margin-bottom: 3rem;
+    }
+    
+    header h1 { 
+        font-size: 2.25rem; 
+    }
+    
+    .device-card {
+        padding: 1.75rem;
+    }
+    
+    .device-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
+    
+    .grid-split {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+/* Seminar mode keyframes and text toggle style */
+.seminar-highlight {
+    background: linear-gradient(90deg, rgba(34, 211, 238, 0.15), transparent);
+    border-left: 2px solid var(--accent-secondary);
+    padding-left: 2rem !important;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+/* Enhancing list item transition speeds */
+li {
+    transition: all 0.3s ease;
+}
+/* Media preview container within cards */
+/*.device-card::after {
+    content: '';
+    position: absolute;
+    bottom: 2.5rem;
+    right: 3rem;
+    width: 200px;
+    height: 130px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.15;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+}*/
+
+/* Brighten up the historic preview when hovering over the card */
+/*.device-card:hover::after {
+    opacity: 0.55;
+}*/
+
+/* Adjust layout on mobile devices */
+/*@media (max-width: 900px) {
+    .device-card::after {
+        display: none; *//* Hides image on narrow phone displays to keep text clear *//*
+    }
+}*/
+/* Inject image into Card 1 (Abacus) */
+/*.device-card:nth-of-type(1)::after {
+    background-image: url('Abacus.png');
+}*/
+
+/* Inject image into Card 2 (Napier's Bones) */
+/*.device-card:nth-of-type(2)::after {
+    background-image: url('NapiersBones.png');
+}*/
+
+/* Inject image into Card 3 (Pascaline) */
+/*.device-card:nth-of-type(3)::after {
+    background-image: url('Pascaline.png');
+}*/
+/* Presentation Media Container Layout */
+.presentation-media-box {
+    margin-top: 2.5rem;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.slide-image {
+    max-width: 100%;
+    max-height: 280px;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    opacity: 0.85;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    margin: 10px;
+}
+
+/* Hover accent to engage the audience when focusing on an image */
+.device-card:hover .slide-image {
+    opacity: 1;
+    transform: scale(1.02);
+}
+
