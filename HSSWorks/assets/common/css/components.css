@@ -1,0 +1,468 @@
+/*
+==========================================================
+HSSWorks
+
+Common Framework
+File : components.css
+
+Author : OpenAI + Daine Davies
+==========================================================
+*/
+
+
+/*========================================================
+SECTION TITLE
+========================================================*/
+
+.section-title{
+
+    font-size:var(--fs-3xl);
+
+    font-weight:700;
+
+    margin-bottom:16px;
+
+    color:var(--secondary);
+
+}
+
+.section-subtitle{
+
+    font-size:var(--fs-lg);
+
+    color:var(--text-muted);
+
+    margin-bottom:36px;
+
+}
+
+
+/*========================================================
+HERO
+========================================================*/
+
+.hero{
+
+    background:var(--hero-gradient);
+
+    color:white;
+
+    padding:80px 50px;
+
+    border-radius:var(--radius-lg);
+
+    box-shadow:var(--shadow);
+
+}
+
+.hero h1{
+
+    font-size:var(--fs-4xl);
+
+    margin-bottom:18px;
+
+}
+
+.hero p{
+
+    max-width:700px;
+
+    font-size:var(--fs-lg);
+
+}
+
+
+/*========================================================
+CARD
+========================================================*/
+
+.card{
+
+    background:var(--surface);
+
+    padding:var(--card-padding);
+
+    border-radius:var(--radius-lg);
+
+    border:1px solid var(--border);
+
+    box-shadow:var(--shadow);
+
+    transition:var(--transition);
+
+}
+
+.card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:var(--shadow-hover);
+
+}
+
+.card h3{
+
+    margin-bottom:16px;
+
+}
+
+.card p{
+
+    color:var(--text-light);
+
+}
+
+
+/*========================================================
+BUTTON
+========================================================*/
+
+.button{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    height:var(--button-height);
+
+    padding:var(--button-padding);
+
+    background:var(--button-gradient);
+
+    color:white;
+
+    border-radius:var(--radius-round);
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+}
+
+.button:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:var(--shadow-hover);
+
+}
+
+.button-outline{
+
+    background:white;
+
+    color:var(--primary);
+
+    border:2px solid var(--primary);
+
+}
+
+
+/*========================================================
+IMAGE CARD
+========================================================*/
+
+.image-card{
+
+    overflow:hidden;
+
+    border-radius:var(--image-radius);
+
+    background:white;
+
+    border:1px solid var(--border);
+
+    box-shadow:var(--shadow);
+
+}
+
+.image-card img{
+
+    width:100%;
+
+}
+
+.image-card figcaption{
+
+    padding:18px;
+
+    text-align:center;
+
+    color:var(--text-muted);
+
+    font-size:var(--fs-sm);
+
+}
+
+
+/*========================================================
+FEATURE BOX
+========================================================*/
+
+.feature{
+
+    display:flex;
+
+    gap:18px;
+
+    align-items:flex-start;
+
+    padding:24px;
+
+    border-radius:var(--radius-md);
+
+    background:white;
+
+    border:1px solid var(--border);
+
+}
+
+.feature-icon{
+
+    font-size:2rem;
+
+}
+
+.feature-content h3{
+
+    margin-bottom:8px;
+
+}
+
+.feature-content p{
+
+    color:var(--text-light);
+
+}
+
+
+/*========================================================
+INFO BOX
+========================================================*/
+
+.info-box{
+
+    padding:24px;
+
+    background:var(--info-bg);
+
+    border-left:6px solid var(--info);
+
+    border-radius:var(--radius-sm);
+
+}
+
+.info-box h4{
+
+    margin-bottom:10px;
+
+}
+
+
+/*========================================================
+SUCCESS BOX
+========================================================*/
+
+.success-box{
+
+    padding:24px;
+
+    background:var(--success-bg);
+
+    border-left:6px solid var(--success);
+
+    border-radius:var(--radius-sm);
+
+}
+
+
+/*========================================================
+WARNING BOX
+========================================================*/
+
+.warning-box{
+
+    padding:24px;
+
+    background:var(--warning-bg);
+
+    border-left:6px solid var(--warning);
+
+    border-radius:var(--radius-sm);
+
+}
+
+
+/*========================================================
+DANGER BOX
+========================================================*/
+
+.danger-box{
+
+    padding:24px;
+
+    background:var(--danger-bg);
+
+    border-left:6px solid var(--danger);
+
+    border-radius:var(--radius-sm);
+
+}
+
+
+/*========================================================
+CODE BLOCK
+========================================================*/
+
+.code-block{
+
+    background:var(--code-bg);
+
+    color:var(--code-text);
+
+    border-radius:var(--radius-md);
+
+    padding:24px;
+
+    overflow:auto;
+
+    font-family:var(--font-code);
+
+    line-height:1.7;
+
+}
+
+
+/*========================================================
+OUTPUT BLOCK
+========================================================*/
+
+.output{
+
+    background:#f8fafc;
+
+    border-left:5px solid var(--primary);
+
+    padding:20px;
+
+    border-radius:var(--radius-sm);
+
+    font-family:var(--font-code);
+
+}
+
+
+/*========================================================
+TABLE
+========================================================*/
+
+.table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    overflow:hidden;
+
+    border-radius:var(--radius-md);
+
+}
+
+.table th{
+
+    background:var(--table-header);
+
+    padding:16px;
+
+    text-align:left;
+
+}
+
+.table td{
+
+    padding:16px;
+
+    border-bottom:1px solid var(--border);
+
+}
+
+.table tr:nth-child(even){
+
+    background:var(--table-alt);
+
+}
+
+
+/*========================================================
+BADGE
+========================================================*/
+
+.badge{
+
+    display:inline-block;
+
+    padding:6px 14px;
+
+    border-radius:999px;
+
+    background:var(--primary-light);
+
+    color:var(--primary);
+
+    font-size:var(--fs-sm);
+
+    font-weight:600;
+
+}
+
+
+/*========================================================
+SUMMARY CARD
+========================================================*/
+
+.summary{
+
+    background:linear-gradient(135deg,#eff6ff,#ffffff);
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius-lg);
+
+    padding:36px;
+
+}
+
+.summary ul{
+
+    list-style:disc;
+
+    padding-left:22px;
+
+}
+
+.summary li{
+
+    margin:10px 0;
+
+}
+
+
+/*========================================================
+DIVIDER
+========================================================*/
+
+.divider{
+
+    width:100%;
+
+    height:1px;
+
+    background:var(--border);
+
+    margin:50px 0;
+
+}

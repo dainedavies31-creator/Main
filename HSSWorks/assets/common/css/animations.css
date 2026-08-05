@@ -1,0 +1,406 @@
+/*
+==========================================================
+HSSWorks
+
+Common Framework
+File : animations.css
+
+Author : OpenAI + Daine Davies
+==========================================================
+*/
+
+
+/*========================================================
+DEFAULT TRANSITIONS
+========================================================*/
+
+*{
+    transition:
+        background-color var(--transition),
+        color var(--transition),
+        border-color var(--transition),
+        box-shadow var(--transition);
+}
+
+
+/*========================================================
+HOVER LIFT
+========================================================*/
+
+.hover-lift{
+    transition:transform var(--transition),
+               box-shadow var(--transition);
+}
+
+.hover-lift:hover{
+    transform:translateY(-6px);
+    box-shadow:var(--shadow-hover);
+}
+
+
+/*========================================================
+HOVER SCALE
+========================================================*/
+
+.hover-scale{
+    transition:transform var(--transition);
+}
+
+.hover-scale:hover{
+    transform:scale(1.04);
+}
+
+
+/*========================================================
+HOVER GLOW
+========================================================*/
+
+.hover-glow{
+    transition:box-shadow var(--transition);
+}
+
+.hover-glow:hover{
+    box-shadow:
+        0 0 25px rgba(37,99,235,.28);
+}
+
+
+/*========================================================
+FADE IN
+========================================================*/
+
+.fade-in{
+    animation:fadeIn .8s ease forwards;
+}
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+    }
+
+    to{
+        opacity:1;
+    }
+
+}
+
+
+/*========================================================
+SLIDE UP
+========================================================*/
+
+.slide-up{
+    animation:slideUp .7s ease forwards;
+}
+
+@keyframes slideUp{
+
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+
+/*========================================================
+SLIDE LEFT
+========================================================*/
+
+.slide-left{
+    animation:slideLeft .7s ease forwards;
+}
+
+@keyframes slideLeft{
+
+    from{
+        opacity:0;
+        transform:translateX(-40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+
+}
+
+
+/*========================================================
+SLIDE RIGHT
+========================================================*/
+
+.slide-right{
+    animation:slideRight .7s ease forwards;
+}
+
+@keyframes slideRight{
+
+    from{
+        opacity:0;
+        transform:translateX(40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+
+}
+
+
+/*========================================================
+ZOOM
+========================================================*/
+
+.zoom-in{
+    animation:zoomIn .5s ease forwards;
+}
+
+@keyframes zoomIn{
+
+    from{
+        opacity:0;
+        transform:scale(.85);
+    }
+
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+
+}
+
+
+/*========================================================
+POP
+========================================================*/
+
+.pop{
+    animation:pop .45s ease;
+}
+
+@keyframes pop{
+
+    0%{
+        transform:scale(.9);
+    }
+
+    60%{
+        transform:scale(1.05);
+    }
+
+    100%{
+        transform:scale(1);
+    }
+
+}
+
+
+/*========================================================
+FLOAT
+========================================================*/
+
+.float{
+    animation:floating 4s ease-in-out infinite;
+}
+
+@keyframes floating{
+
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-10px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+
+}
+
+
+/*========================================================
+ROTATE
+========================================================*/
+
+.rotate{
+    animation:rotate360 1s linear;
+}
+
+@keyframes rotate360{
+
+    from{
+        transform:rotate(0deg);
+    }
+
+    to{
+        transform:rotate(360deg);
+    }
+
+}
+
+
+/*========================================================
+PULSE
+========================================================*/
+
+.pulse{
+    animation:pulse 2s infinite;
+}
+
+@keyframes pulse{
+
+    0%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.05);
+    }
+
+    100%{
+        transform:scale(1);
+    }
+
+}
+
+
+/*========================================================
+BOUNCE
+========================================================*/
+
+.bounce{
+    animation:bounce 1.2s infinite;
+}
+
+@keyframes bounce{
+
+    0%,100%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-8px);
+    }
+
+}
+
+
+/*========================================================
+SHAKE
+========================================================*/
+
+.shake{
+    animation:shake .45s;
+}
+
+@keyframes shake{
+
+    0%,100%{
+        transform:translateX(0);
+    }
+
+    25%{
+        transform:translateX(-5px);
+    }
+
+    75%{
+        transform:translateX(5px);
+    }
+
+}
+
+
+/*========================================================
+ROTATING ICON
+========================================================*/
+
+.spin{
+
+    animation:spin 2s linear infinite;
+
+}
+
+@keyframes spin{
+
+    from{
+        transform:rotate(0deg);
+    }
+
+    to{
+        transform:rotate(360deg);
+    }
+
+}
+
+
+/*========================================================
+REVEAL ON SCROLL
+(JS adds .show)
+========================================================*/
+
+.reveal{
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+    transition:
+        opacity .7s ease,
+        transform .7s ease;
+
+}
+
+.reveal.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+
+/*========================================================
+UNDERLINE ANIMATION
+========================================================*/
+
+.link-underline{
+
+    position:relative;
+
+}
+
+.link-underline::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-3px;
+
+    width:0;
+
+    height:2px;
+
+    background:var(--primary);
+
+    transition:width .3s ease;
+
+}
+
+.link-underline:hover::after{
+
+    width:100%;
+
+}

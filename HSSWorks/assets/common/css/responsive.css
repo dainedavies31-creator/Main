@@ -1,0 +1,309 @@
+/*
+==========================================================
+HSSWorks
+
+Common Framework
+File : responsive.css
+
+Author : OpenAI + Daine Davies
+==========================================================
+*/
+
+
+/*========================================================
+LARGE DESKTOP
+========================================================*/
+
+@media (min-width:1400px){
+
+    main{
+        max-width:1300px;
+    }
+
+}
+
+
+/*========================================================
+LAPTOP
+========================================================*/
+
+@media (max-width:1200px){
+
+    main{
+        padding:36px 24px 70px;
+    }
+
+    .hero{
+        padding:70px 40px;
+    }
+
+}
+
+
+/*========================================================
+TABLET
+========================================================*/
+
+@media (max-width:992px){
+
+    main{
+        padding:32px 20px 60px;
+    }
+
+    .hero{
+        padding:60px 30px;
+    }
+
+    .hero h1{
+        font-size:var(--fs-3xl);
+    }
+
+    .section-title{
+        font-size:var(--fs-2xl);
+    }
+
+    .grid-2,
+    .grid-3,
+    .grid-4{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .flex{
+
+        flex-direction:column;
+
+    }
+
+}
+
+
+/*========================================================
+MOBILE
+========================================================*/
+
+@media (max-width:768px){
+
+    body{
+
+        font-size:15px;
+
+    }
+
+    main{
+
+        padding:24px 16px 50px;
+
+    }
+
+    section{
+
+        margin-bottom:50px;
+
+    }
+
+    .hero{
+
+        padding:40px 24px;
+
+        border-radius:var(--radius-md);
+
+    }
+
+    .hero h1{
+
+        font-size:2rem;
+
+    }
+
+    .hero p{
+
+        font-size:1rem;
+
+    }
+
+    .section-title{
+
+        font-size:1.8rem;
+
+    }
+
+    .section-subtitle{
+
+        font-size:1rem;
+
+    }
+
+    .card{
+
+        padding:22px;
+
+    }
+
+    .feature{
+
+        flex-direction:column;
+
+    }
+
+    .button{
+
+        width:100%;
+
+        justify-content:center;
+
+    }
+
+    .table{
+
+        display:block;
+
+        overflow-x:auto;
+
+        white-space:nowrap;
+
+    }
+
+    .code-block{
+
+        font-size:.9rem;
+
+    }
+
+}
+
+
+/*========================================================
+SMALL MOBILE
+========================================================*/
+
+@media (max-width:480px){
+
+    main{
+
+        padding:20px 14px 40px;
+
+    }
+
+    .hero{
+
+        padding:32px 18px;
+
+    }
+
+    .hero h1{
+
+        font-size:1.7rem;
+
+    }
+
+    .section-title{
+
+        font-size:1.5rem;
+
+    }
+
+    .card{
+
+        padding:18px;
+
+    }
+
+    .summary{
+
+        padding:24px;
+
+    }
+
+    .feature{
+
+        padding:18px;
+
+    }
+
+    .info-box,
+    .success-box,
+    .warning-box,
+    .danger-box{
+
+        padding:18px;
+
+    }
+
+}
+
+
+/*========================================================
+LANDSCAPE MOBILE
+========================================================*/
+
+@media (max-height:500px) and (orientation:landscape){
+
+    .hero{
+
+        padding:28px;
+
+    }
+
+    section{
+
+        margin-bottom:40px;
+
+    }
+
+}
+
+
+/*========================================================
+PRINT
+========================================================*/
+
+@media print{
+
+    body{
+
+        background:white;
+
+        color:black;
+
+    }
+
+    .button,
+    nav,
+    aside,
+    footer{
+
+        display:none !important;
+
+    }
+
+    main{
+
+        max-width:100%;
+
+        padding:0;
+
+    }
+
+    .card{
+
+        box-shadow:none;
+
+        border:1px solid #ccc;
+
+        break-inside:avoid;
+
+    }
+
+    .hero{
+
+        background:white !important;
+
+        color:black !important;
+
+        border:1px solid #ccc;
+
+    }
+
+}

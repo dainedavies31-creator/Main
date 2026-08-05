@@ -1,0 +1,342 @@
+/*
+==========================================================
+HSSWorks
+
+Common Framework
+
+File : layout.css
+
+Author : OpenAI + Daine Davies
+==========================================================
+*/
+
+
+/*========================================================
+RESET
+========================================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:var(--font);
+    line-height:var(--line-height);
+    min-height:100vh;
+    overflow-x:hidden;
+}
+
+
+/*========================================================
+IMAGES
+========================================================*/
+
+img{
+    display:block;
+    max-width:100%;
+    height:auto;
+}
+
+
+/*========================================================
+LINKS
+========================================================*/
+
+a{
+    color:inherit;
+    text-decoration:none;
+}
+
+
+/*========================================================
+LISTS
+========================================================*/
+
+ul,
+ol{
+    list-style:none;
+}
+
+
+/*========================================================
+BUTTONS
+========================================================*/
+
+button{
+    font:inherit;
+    cursor:pointer;
+    border:none;
+    background:none;
+}
+
+
+/*========================================================
+INPUTS
+========================================================*/
+
+input,
+textarea,
+select{
+    font:inherit;
+}
+
+
+/*========================================================
+PAGE WRAPPER
+========================================================*/
+
+.page{
+
+    width:100%;
+    min-height:100vh;
+
+}
+
+
+/*========================================================
+HEADER
+========================================================*/
+
+header{
+
+    position:sticky;
+    top:0;
+
+    z-index:var(--z-header);
+
+    background:rgba(255,255,255,.95);
+
+    backdrop-filter:blur(10px);
+
+    border-bottom:1px solid var(--border);
+
+}
+
+
+/*========================================================
+MAIN
+========================================================*/
+
+main{
+
+    width:min(
+        100%,
+        var(--container)
+    );
+
+    margin:auto;
+
+    padding:40px 20px 80px;
+
+}
+
+
+/*========================================================
+SECTION
+========================================================*/
+
+section{
+
+    margin-bottom:70px;
+
+    scroll-margin-top:90px;
+
+}
+
+
+/*========================================================
+CONTAINER
+========================================================*/
+
+.container{
+
+    width:min(
+        100%,
+        var(--container)
+    );
+
+    margin:auto;
+
+}
+
+
+/*========================================================
+CONTENT
+========================================================*/
+
+.content{
+
+    width:min(
+        100%,
+        var(--content)
+    );
+
+    margin:auto;
+
+}
+
+
+/*========================================================
+GRID
+========================================================*/
+
+.grid{
+
+    display:grid;
+
+    gap:24px;
+
+}
+
+
+.grid-2{
+
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(300px,1fr)
+        );
+
+}
+
+
+.grid-3{
+
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(250px,1fr)
+        );
+
+}
+
+
+.grid-4{
+
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(200px,1fr)
+        );
+
+}
+
+
+/*========================================================
+FLEX
+========================================================*/
+
+.flex{
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+
+.flex-column{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+
+.flex-center{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+
+/*========================================================
+SPACING HELPERS
+========================================================*/
+
+.mt-1{margin-top:var(--space-1);}
+.mt-2{margin-top:var(--space-2);}
+.mt-3{margin-top:var(--space-3);}
+.mt-4{margin-top:var(--space-4);}
+.mt-5{margin-top:var(--space-5);}
+.mt-6{margin-top:var(--space-6);}
+
+.mb-1{margin-bottom:var(--space-1);}
+.mb-2{margin-bottom:var(--space-2);}
+.mb-3{margin-bottom:var(--space-3);}
+.mb-4{margin-bottom:var(--space-4);}
+.mb-5{margin-bottom:var(--space-5);}
+.mb-6{margin-bottom:var(--space-6);}
+
+
+/*========================================================
+TEXT ALIGNMENT
+========================================================*/
+
+.text-center{
+    text-align:center;
+}
+
+.text-left{
+    text-align:left;
+}
+
+.text-right{
+    text-align:right;
+}
+
+
+/*========================================================
+DISPLAY
+========================================================*/
+
+.hidden{
+    display:none !important;
+}
+
+.block{
+    display:block;
+}
+
+.inline{
+    display:inline;
+}
+
+.inline-block{
+    display:inline-block;
+}
+
+
+/*========================================================
+SCROLLBAR
+========================================================*/
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:var(--scroll-track);
+}
+
+::-webkit-scrollbar-thumb{
+    background:var(--scroll-thumb);
+    border-radius:999px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:var(--primary);
+}
