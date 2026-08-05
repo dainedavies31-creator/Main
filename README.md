@@ -1,4 +1,3 @@
-# Main
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,7 +36,7 @@
     </style>
 </head>
 <body>
-    <button onclick="alert('You are not logged in!')">Diya Therese</button>
+    <button onclick="alert('You are not logged in!')" class="github-btn">Diya Therese</button>
     <!-- REPLACE THE URL BELOW WITH YOUR ACTUAL GITHUB REPOSITORY LINK -->
     <a href="https://dainedavies31-creator.github.io/Main/HSSWorks/Seminars/Computer/XXIV-VII-MMXXVI.html" target="_blank" class="github-btn">
         View Files on GitHub
