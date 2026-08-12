@@ -1,0 +1,1924 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+<title>
+Chapter 4 | Principles of Programming and Problem Solving
+</title>
+
+<meta
+    name="description"
+    content="Interactive XI Computer Science lesson on Principles of Programming and Problem Solving.">
+
+<link rel="stylesheet"
+      href="../../assets/common/css/variables.css">
+
+<link rel="stylesheet"
+      href="../../assets/common/css/layout.css">
+
+<link rel="stylesheet"
+      href="../../assets/common/css/components.css">
+
+<link rel="stylesheet"
+      href="../../assets/common/css/interactive.css">
+
+<link rel="stylesheet"
+      href="../../assets/common/css/animations.css">
+
+<link rel="stylesheet"
+      href="../../assets/common/css/responsive.css">
+
+</head>
+
+
+<body>
+
+<div class="reading-progress"></div>
+
+
+<!-- ======================================================
+     HEADER
+====================================================== -->
+
+<header>
+
+<div class="container flex">
+
+<h2>
+XI Computer Science
+</h2>
+
+<nav data-navigation>
+
+<a href="#hero">Start</a>
+
+<a href="#problem">Problem Solving</a>
+
+<a href="#approaches">Approaches</a>
+
+<a href="#algorithm">Algorithm</a>
+
+<a href="#flowchart">Flowchart</a>
+
+<a href="#programming">Programming</a>
+
+<a href="#quiz">Quiz</a>
+
+</nav>
+
+<button
+    class="button"
+    data-nav-toggle
+    aria-label="Open navigation">
+
+☰
+
+</button>
+
+</div>
+
+</header> 
+
+
+<main>
+
+
+<!-- ======================================================
+     HERO
+====================================================== -->
+
+<section
+    id="hero"
+    class="hero reveal">
+
+<span class="badge">
+Chapter 4
+</span>
+
+<h1>
+Principles of Programming
+<br>
+and Problem Solving
+</h1>
+
+<p>
+
+A computer can solve incredibly complex problems —
+but only when we give it a clear sequence of instructions.
+
+In this chapter, we learn how programmers transform
+a real-world problem into a solution that a computer
+can execute.
+
+</p>
+
+<br>
+
+<a
+    href="#problem"
+    class="button">
+
+Explore the Chapter →
+
+</a>
+
+</section>
+
+
+<!-- ======================================================
+     CHAPTER ROADMAP
+====================================================== -->
+
+<section class="reveal">
+
+<h2 class="section-title">
+Chapter Roadmap
+</h2>
+
+<p class="section-subtitle">
+Follow the journey from a problem to a working program.
+</p>
+
+
+<div class="grid grid-3">
+
+
+<div class="card hover-lift">
+
+<span class="badge">
+01
+</span>
+
+<h3>
+Understand
+</h3>
+
+<p>
+Identify the problem and determine what the computer
+needs to do.
+</p>
+
+</div>
+
+
+<div class="card hover-lift">
+
+<span class="badge">
+02
+</span>
+
+<h3>
+Design
+</h3>
+
+<p>
+Develop an algorithm and represent the solution using
+a flowchart.
+</p>
+
+</div>
+
+
+<div class="card hover-lift">
+
+<span class="badge">
+03
+</span>
+
+<h3>
+Implement
+</h3>
+
+<p>
+Convert the solution into a program, test it and correct
+its errors.
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     PROBLEM SOLVING
+====================================================== -->
+
+<section
+    id="problem"
+    class="reveal">
+
+<h2 class="section-title">
+Problem Solving Using Computers
+</h2>
+
+<p class="section-subtitle">
+The computer does not decide the solution for us.
+We design the solution and give the computer instructions.
+</p>
+
+
+<div class="card">
+
+<h3>
+Computer = Fast Executor
+</h3>
+
+<p>
+
+A computer follows instructions supplied by a programmer.
+It can process data extremely quickly, but it does not
+independently decide what the problem means or what the
+correct solution should be.
+
+</p>
+
+</div>
+
+
+<br>
+
+
+<div class="info-box">
+
+<h4>
+The programmer's job
+</h4>
+
+<p>
+
+The programmer must understand the problem, design a
+logical solution, express that solution clearly and finally
+translate it into a programming language.
+
+</p>
+
+</div>
+
+
+<br>
+
+
+<div class="success-box">
+
+<h4>
+Think first. Code later.
+</h4>
+
+<p>
+
+Good programming begins with good problem solving.
+Writing code before understanding the problem often
+creates unnecessary errors.
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     STAGES
+====================================================== -->
+
+<section
+    id="stages"
+    class="reveal">
+
+<h2 class="section-title">
+Stages of Problem Solving
+</h2>
+
+<p class="section-subtitle">
+A programming problem passes through several stages.
+</p>
+
+
+<div class="grid grid-2">
+
+
+<div class="card">
+
+<span class="badge">
+01
+</span>
+
+<h3>
+Problem Identification
+</h3>
+
+<p>
+Understand exactly what has to be solved and identify
+the required inputs, processing and outputs.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<span class="badge">
+02
+</span>
+
+<h3>
+Algorithm & Flowchart
+</h3>
+
+<p>
+Design the solution before writing the actual program.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<span class="badge">
+03
+</span>
+
+<h3>
+Coding
+</h3>
+
+<p>
+Convert the designed solution into a programming
+language.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<span class="badge">
+04
+</span>
+
+<h3>
+Translation
+</h3>
+
+<p>
+Convert the high-level program into a form that the
+computer can execute.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<span class="badge">
+05
+</span>
+
+<h3>
+Debugging
+</h3>
+
+<p>
+Detect and correct errors in the program.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<span class="badge">
+06
+</span>
+
+<h3>
+Testing & Execution
+</h3>
+
+<p>
+Run the program with suitable data and verify the result.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<span class="badge">
+07
+</span>
+
+<h3>
+Documentation</h3>
+
+<p>
+Record the important details of the program so that it
+can be understood and maintained later.
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     TOP-DOWN / BOTTOM-UP
+====================================================== -->
+
+<section
+    id="approaches"
+    class="reveal">
+
+<h2 class="section-title">
+Two Ways of Thinking
+</h2>
+
+<p class="section-subtitle">
+Large problems become easier when we break them into
+manageable parts.
+</p>
+
+
+<div class="grid grid-2">
+
+
+<div class="card hover-lift">
+
+<h3>
+⬇ Top-Down Design
+</h3>
+
+<p>
+
+Start with the complete problem and progressively divide
+it into smaller and simpler tasks.
+
+</p>
+
+<div class="info-box">
+
+<strong>
+Big problem → smaller problems → simple tasks
+</strong>
+
+</div>
+
+</div>
+
+
+<div class="card hover-lift">
+
+<h3>
+⬆ Bottom-Up Design
+</h3>
+
+<p>
+
+Start by developing smaller components and gradually
+combine them to construct the complete solution.
+
+</p>
+
+<div class="info-box">
+
+<strong>
+Small components → modules → complete solution
+</strong>
+
+</div>
+
+</div>
+
+
+</div>
+
+
+<br>
+
+
+<div class="warning-box">
+
+<h4>
+Exam Focus
+</h4>
+
+<p>
+
+Top-down design starts from the main problem and moves
+towards smaller tasks. Bottom-up design starts with
+smaller components and builds towards the complete
+solution.
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     ALGORITHM
+====================================================== -->
+
+<section
+    id="algorithm"
+    class="reveal">
+
+<h2 class="section-title">
+Algorithm
+</h2>
+
+<p class="section-subtitle">
+The blueprint of a solution.
+</p>
+
+
+<div class="hero">
+
+<h2>
+What is an Algorithm?
+</h2>
+
+<p>
+
+An algorithm is a step-by-step procedure for solving a
+problem. Each step should describe a specific action
+required to obtain the desired result.
+
+</p>
+
+</div>
+
+
+<br>
+
+
+<div class="grid grid-2">
+
+
+<div class="card">
+
+<h3>
+Good Algorithm
+</h3>
+
+<ul>
+
+<li>
+Has clear and unambiguous steps.
+</li>
+
+<li>
+Has a definite beginning and end.
+</li>
+
+<li>
+Produces the required result.
+</li>
+
+<li>
+Can be converted into a program.
+</li>
+
+</ul>
+
+</div>
+
+
+<div class="card">
+
+<h3>
+Think of it like a recipe</h3>
+
+<p>
+
+A recipe tells you what to do step by step.
+An algorithm does something similar for solving a
+computational problem.
+
+</p>
+
+</div>
+
+</div>
+
+
+<br>
+
+
+<div class="success-box">
+
+<h4>
+Remember
+</h4>
+
+<p>
+
+<strong>
+Algorithm = Step-by-step solution
+</strong>
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     ALGORITHM EXAMPLE
+====================================================== -->
+
+<section class="reveal">
+
+<h2 class="section-title">
+Example: Add Two Numbers
+</h2>
+
+<p class="section-subtitle">
+Let's design the solution before writing code.
+</p>
+
+
+<div class="card">
+
+<h3>
+Problem
+</h3>
+
+<p>
+
+Accept two numbers and display their sum.
+
+</p>
+
+</div>
+
+
+<br>
+
+
+<div class="summary">
+
+<h3>
+Algorithm
+</h3>
+
+<ol>
+
+<li>
+Start.
+</li>
+
+<li>
+Input the first number A.
+</li>
+
+<li>
+Input the second number B.
+</li>
+
+<li>
+Calculate S = A + B.
+</li>
+
+<li>
+Display S.
+</li>
+
+<li>
+Stop.
+</li>
+
+</ol>
+
+</div>
+
+
+<br>
+
+
+<div class="info-box">
+
+<h4>
+Notice the pattern</h4>
+
+<p>
+
+<strong>
+Input → Process → Output
+</strong>
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     FLOWCHART
+====================================================== -->
+
+<section
+    id="flowchart"
+    class="reveal">
+
+<h2 class="section-title">
+Flowchart
+</h2>
+
+<p class="section-subtitle">
+A visual representation of an algorithm.
+</p>
+
+
+<div class="card">
+
+<h3>
+What is a Flowchart?
+</h3>
+
+<p>
+
+A flowchart represents an algorithm graphically using
+standard symbols and arrows to show the sequence of
+operations.
+
+</p>
+
+</div>
+
+
+<br>
+
+
+<div class="image-card">
+
+<img
+    src="../../assets/chapter4/images/flowchart-symbols.svg"
+    alt="Common flowchart symbols">
+
+<figcaption>
+
+Common flowchart symbols used to represent algorithms.
+
+</figcaption>
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     FLOWCHART SYMBOLS
+====================================================== -->
+
+<section class="reveal">
+
+<h2 class="section-title">
+Flowchart Symbols
+</h2>
+
+<div class="grid grid-2">
+
+
+<div class="card">
+
+<h3>
+🟢 Terminal
+</h3>
+
+<p>
+
+<strong>Shape:</strong> Oval
+
+</p>
+
+<p>
+Used to indicate the beginning or ending of a flowchart.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>
+🔷 Input / Output
+</h3>
+
+<p>
+
+<strong>Shape:</strong> Parallelogram
+
+</p>
+
+<p>
+Used to receive input or display output.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>
+⬛ Processing
+</h3>
+
+<p>
+
+<strong>Shape:</strong> Rectangle
+
+</p>
+
+<p>
+Used to represent processing or calculations.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>
+🔶 Decision
+</h3>
+
+<p>
+
+<strong>Shape:</strong> Diamond / Rhombus
+
+</p>
+
+<p>
+Used when a condition must be evaluated.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>
+➡ Flow Line
+</h3>
+
+<p>
+
+<strong>Symbol:</strong> Arrow
+
+</p>
+
+<p>
+Shows the direction of control or operation.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>
+⭕ Connector
+</h3>
+
+<p>
+
+Used to connect different parts of a flowchart,
+especially when the diagram cannot conveniently fit
+on one page.
+
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     FLOWCHART EXAMPLE
+====================================================== -->
+
+<section class="reveal">
+
+<h2 class="section-title">
+Flowchart Example
+</h2>
+
+<p class="section-subtitle">
+Check whether a number is even or odd.
+</p>
+
+
+<div class="card">
+
+<h3>
+Logic
+</h3>
+
+<p>
+
+If the remainder obtained by dividing a number by 2 is
+zero, the number is even. Otherwise, it is odd.
+
+</p>
+
+</div>
+
+
+<br>
+
+
+<div class="summary">
+
+<h3>
+Algorithm</h3>
+
+<ol>
+
+<li>
+Start.
+</li>
+
+<li>
+Input N.
+</li>
+
+<li>
+Calculate R = N % 2.
+</li>
+
+<li>
+If R = 0, display "Even".
+</li>
+
+<li>
+Otherwise, display "Odd".
+</li>
+
+<li>
+Stop.
+</li>
+
+</ol>
+
+</div>
+
+
+<br>
+
+
+<div class="image-card">
+
+<img
+    src="../../assets/chapter4/images/even-odd-flowchart.svg"
+    alt="Flowchart for checking whether a number is even or odd">
+
+<figcaption>
+
+Example flowchart: Even or Odd.
+
+</figcaption>
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     CODING
+====================================================== -->
+
+<section
+    id="programming"
+    class="reveal">
+
+<h2 class="section-title">
+From Algorithm to Program
+</h2>
+
+<p class="section-subtitle">
+The algorithm describes the logic. Coding expresses that
+logic using a programming language.
+</p>
+
+
+<div class="grid grid-2">
+
+
+<div class="card">
+
+<h3>
+Algorithm
+</h3>
+
+<p>
+
+Human-readable sequence of steps describing the solution.
+
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>
+Program
+</h3>
+
+<p>
+
+A set of instructions written using the rules of a
+programming language.
+
+</p>
+
+</div>
+
+</div>
+
+
+<br>
+
+
+<div class="info-box">
+
+<h4>
+Examples of programming languages</h4>
+
+<p>
+
+C++, Java, Python and many other languages can be used
+to express computational solutions.
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     TRANSLATION
+====================================================== -->
+
+<section class="reveal">
+
+<h2 class="section-title">
+Translation</h2>
+
+<p class="section-subtitle">
+Humans write programs in languages that are easier for
+people to understand.
+</p>
+
+
+<div class="card">
+
+<p>
+
+The computer ultimately works with machine-level
+instructions. A translator converts a program written in
+a high-level language into an appropriate lower-level
+form that the computer can execute.
+
+</p>
+
+</div>
+
+
+<br>
+
+
+<div class="grid grid-2">
+
+<div class="card">
+
+<h3>
+Compiler
+</h3>
+
+<p>
+
+Translates a program into machine-oriented code before
+execution, reporting errors found during compilation.
+
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>
+Interpreter
+</h3>
+
+<p>
+
+Translates and executes instructions during program
+execution.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     DEBUGGING
+====================================================== -->
+
+<section class="reveal">
+
+<h2 class="section-title">
+Debugging
+</h2>
+
+<p class="section-subtitle">
+Finding and correcting errors is a normal part of
+program development.
+</p>
+
+
+<div class="grid grid-3">
+
+
+<div class="card">
+
+<span class="badge">
+Syntax
+</span>
+
+<h3>
+Syntax Error
+</h3>
+
+<p>
+
+Occurs when the rules of the programming language are
+not followed.
+
+</p>
+
+</div>
+
+
+<div class="card">
+
+<span class="badge">
+Logic
+</span>
+
+<h3>
+Logical Error
+</h3>
+
+<p>
+
+The program runs, but produces an incorrect result because
+the logic is wrong.
+
+</p>
+
+</div>
+
+
+<div class="card">
+
+<span class="badge">
+Runtime
+</span>
+
+<h3>
+Runtime Error
+</h3>
+
+<p>
+
+An error occurs while the program is executing.
+
+</p>
+
+</div>
+
+
+</div>
+
+
+<br>
+
+
+<div class="success-box">
+
+<h4>
+Debugging = Detect + Correct</h4>
+
+<p>
+
+Debugging is the process of finding and correcting errors
+in a program.
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     PRACTICAL THINKING
+====================================================== -->
+
+<section class="reveal">
+
+<h2 class="section-title">
+Think Like a Programmer
+</h2>
+
+<div class="grid grid-2">
+
+
+<div class="card hover-lift">
+
+<h3>
+1. Understand
+</h3>
+
+<p>
+What exactly is the problem asking?
+</p>
+
+</div>
+
+
+<div class="card hover-lift">
+
+<h3>
+2. Identify
+</h3>
+
+<p>
+What are the inputs and required outputs?
+</p>
+
+</div>
+
+
+<div class="card hover-lift">
+
+<h3>
+3. Design
+</h3>
+
+<p>
+What sequence of steps will solve it?
+</p>
+
+</div>
+
+
+<div class="card hover-lift">
+
+<h3>
+4. Test
+</h3>
+
+<p>
+Does the solution work for different inputs?
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     FLASHCARDS
+====================================================== -->
+
+<section
+    class="reveal">
+
+<h2 class="section-title">
+Active Recall
+</h2>
+
+<p class="section-subtitle">
+Click a card to reveal the answer.
+</p>
+
+
+<div class="grid grid-2">
+
+
+<div class="flashcard">
+
+<div class="flashcard-inner">
+
+<div class="flashcard-front">
+
+<h3>
+What is an algorithm?
+</h3>
+
+<p>
+Tap to reveal
+</p>
+
+</div>
+
+<div class="flashcard-back">
+
+<p>
+
+A step-by-step procedure for solving a problem.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="flashcard">
+
+<div class="flashcard-inner">
+
+<div class="flashcard-front">
+
+<h3>
+What is a flowchart?
+</h3>
+
+<p>
+Tap to reveal
+</p>
+
+</div>
+
+<div class="flashcard-back">
+
+<p>
+
+A graphical representation of an algorithm using
+standard symbols.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="flashcard">
+
+<div class="flashcard-inner">
+
+<div class="flashcard-front">
+
+<h3>
+What does the rectangle represent?
+</h3>
+
+<p>
+Tap to reveal
+</p>
+
+</div>
+
+<div class="flashcard-back">
+
+<p>
+Processing.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="flashcard">
+
+<div class="flashcard-inner">
+
+<div class="flashcard-front">
+
+<h3>
+What is debugging?
+</h3>
+
+<p>
+Tap to reveal
+</p>
+
+</div>
+
+<div class="flashcard-back">
+
+<p>
+
+The process of detecting and correcting errors.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     FAQ / REVISION
+====================================================== -->
+
+<section
+    class="reveal">
+
+<h2 class="section-title">
+Quick Revision</h2>
+
+
+<div class="accordion">
+
+
+<div class="accordion-item">
+
+<button class="accordion-header">
+
+Why is an algorithm prepared before coding?
+
+</button>
+
+<div class="accordion-body">
+
+<p>
+
+It allows the programmer to design and verify the logic
+of the solution before dealing with programming-language
+syntax.
+
+</p>
+
+</div>
+
+</div>
+
+
+<div class="accordion-item">
+
+<button class="accordion-header">
+
+Which flowchart symbol is used for a decision?
+
+</button>
+
+<div class="accordion-body">
+
+<p>
+
+The diamond or rhombus symbol is used to represent a
+decision.
+
+</p>
+
+</div>
+
+</div>
+
+
+<div class="accordion-item">
+
+<button class="accordion-header">
+
+What is the difference between coding and debugging?
+
+</button>
+
+<div class="accordion-body">
+
+<p>
+
+Coding converts the designed solution into a program.
+Debugging detects and corrects errors in that program.
+
+</p>
+
+</div>
+
+</div>
+
+
+<div class="accordion-item">
+
+<button class="accordion-header">
+
+What is top-down design?
+
+</button>
+
+<div class="accordion-body">
+
+<p>
+
+It is an approach where a large problem is progressively
+divided into smaller and simpler tasks.
+
+</p>
+
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     QUIZ
+====================================================== -->
+
+<section
+    id="quiz"
+    class="reveal">
+
+<h2 class="section-title">
+Chapter Check</h2>
+
+<p class="section-subtitle">
+Test yourself before leaving the chapter.
+</p>
+
+
+<div class="quiz">
+
+
+<div
+    class="question"
+    data-answer="b">
+
+<p>
+1. A step-by-step procedure for solving a problem is:
+</p>
+
+<label>
+<input
+    type="radio"
+    name="q1"
+    value="a">
+Flowchart
+</label>
+
+<label>
+<input
+    type="radio"
+    name="q1"
+    value="b">
+Algorithm
+</label>
+
+<label>
+<input
+    type="radio"
+    name="q1"
+    value="c">
+Compiler
+</label>
+
+</div>
+
+
+<div
+    class="question"
+    data-answer="c">
+
+<p>
+2. Which symbol represents processing?
+</p>
+
+<label>
+<input
+    type="radio"
+    name="q2"
+    value="a">
+Oval
+</label>
+
+<label>
+<input
+    type="radio"
+    name="q2"
+    value="b">
+Diamond
+</label>
+
+<label>
+<input
+    type="radio"
+    name="q2"
+    value="c">
+Rectangle
+</label>
+
+</div>
+
+
+<div
+    class="question"
+    data-answer="a">
+
+<p>
+3. Which approach starts with the complete problem and
+breaks it into smaller tasks?
+</p>
+
+<label>
+<input
+    type="radio"
+    name="q3"
+    value="a">
+Top-down design
+</label>
+
+<label>
+<input
+    type="radio"
+    name="q3"
+    value="b">
+Bottom-up design
+</label>
+
+<label>
+<input
+    type="radio"
+    name="q3"
+    value="c">
+Debugging
+</label>
+
+</div>
+
+
+<div
+    class="question"
+    data-answer="b">
+
+<p>
+4. The process of detecting and correcting program errors
+is called:
+</p>
+
+<label>
+<input
+    type="radio"
+    name="q4"
+    value="a">
+Translation
+</label>
+
+<label>
+<input
+    type="radio"
+    name="q4"
+    value="b">
+Debugging
+</label>
+
+<label>
+<input
+    type="radio"
+    name="q4"
+    value="c">
+Documentation
+</label>
+
+</div>
+
+
+<div
+    class="question"
+    data-answer="c">
+
+<p>
+5. Which symbol is normally used for input and output?
+</p>
+
+<label>
+<input
+    type="radio"
+    name="q5"
+    value="a">
+Rectangle
+</label>
+
+<label>
+<input
+    type="radio"
+    name="q5"
+    value="b">
+Oval
+</label>
+
+<label>
+<input
+    type="radio"
+    name="q5"
+    value="c">
+Parallelogram
+</label>
+
+</div>
+
+<div class="flex">
+
+<button
+    class="button quiz-submit">
+
+Check Answers
+
+</button>
+
+<button
+    class="button button-outline quiz-reset">
+
+Try Again
+
+</button>
+
+</div>
+
+
+</div>
+
+</section>
+
+<!-- ======================================================
+     EXAM ZONE
+====================================================== -->
+
+<section class ="reveal">
+
+<h2 class ="section-title">
+Exam Zone 
+</h2>
+
+<div class ="warning-box">
+
+<h4>Know these without hesitation</h4>
+
+<ul>
+
+<li>Definition of algorithm</li>
+
+<li>Definition of flowcharts</li>
+
+<li>Flowchart symbols and thier uses</li>
+
+<li>Top-down and Bottom-up design</li>
+
+<li>States of programming</li>
+
+<li>Meaning of debugging</li>
+
+</ul>
+
+</div>
+
+<br>
+
+<div class="card">
+
+<h3>Challenge</h3>
+
+<p>Design and algorithm to find the largest of two numbers. Then try converting your algorithm into a flowchart </p>
+
+</div>
+
+</section>
+
+<!-- ======================================================
+     SUMMARY
+====================================================== -->
+
+<section class="summary reveal">
+
+<h2>Chapter summary</h2>
+
+<ul>
+
+<li>Problem solving begins with understanding the problem.</li>
+
+<li>Top-down and Bottom-up are two approaches to problem solving.</li>
+
+<li>An algorithm gives a step by step solution.</li>
+
+<li>A flowchart represents an algorithm graphically.</li>
+
+<li>Coding converts the designed solution into a program.</li>
+
+<li>Translation converts the program into an executable form.</li>
+
+<li>Debugging identifies and corrects errors</li>
+
+<li>Testing verifies whether the program produces the expected result.</li>
+
+<li>Documentation helps people understand and maintain the program.</li>
+
+</ul>
+
+</section>
+
+
+</main>
+
+<!-- ======================================================
+     FOOTER
+====================================================== -->
+
+<footer>
+
+<div class="container text-center">
+
+<div class="divider"></div>
+
+<p>XI Computer Science</p>
+
+<p>Chapter 4 - Getting started with python</p>
+
+<p>
+
+© <span class ="current-year"></span> HSSWorks
+
+</p>
+
+</div>
+
+</footer>
+
+
+<button
+    class ="back-to-top"
+    aria-label="Back to top">
+Back to Top
+</button>
+
+<!-- ======================================================
+     COMMON JAVASCRIPT
+====================================================== -->
+
+<script src="../../assets/common/js/main.js"></script>a1
+
+<script src="../../assets/common/js/navigation.js"></script>
+
+<script src="../../assets/common/js/accordion.js"></script>
+
+<script src="../../assets/common/js/flashcard.js"></script>
+
+<script src="../../assets/common/js/quiz.js"></script>
+
+<script src="../../assets/common/js/scroll.js"></script>
+
+<script src="../../assets/common/js/animations.js"></script>
+
+</body>
+
+</html>
